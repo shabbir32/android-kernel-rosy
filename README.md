@@ -48,6 +48,24 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 - Compression algorithms: [lz4], lzo.
 ```
 
+## Branches
+
+##### pie-3.18-base:
+```
+Information:
+
+- CAF tag LA.UM.7.6.r1-05900-89xx.0
+- For pie
+```
+
+##### q-3.18-base:
+```
+Information:
+
+- CAF tag LA.UM.7.6.r1-05900-89xx.0
+- For Q
+```
+
 ## Cloning & building
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
