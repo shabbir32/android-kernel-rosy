@@ -4,11 +4,11 @@ Completely clean and minimal kernel base. Use only with sane device trees, else 
 
 ##### Example of good trees:
 
-[Device Tree](https://github.com/NullDecoder/android_device_xiaomi_rosy.git)\
-[Vendor Tree](https://github.com/NullDecoder/android_vendor_xiaomi_rosy.git)\
-[Recovery Tree](https://github.com/NullDecoder/android_recovery_xiaomi_rosy.git)
+Device tree: [1](https://github.com/NullDecoder/android_device_xiaomi_rosy.git) [2](https://github.com/baunilla/android_device_xiaomi_rosy.git)\
+Vendor tree: [1](https://github.com/NullDecoder/android_vendor_xiaomi_rosy.git) [2](https://github.com/baunilla/android_vendor_xiaomi_rosy.git)\
+Recovery tree: [1](https://github.com/NullDecoder/android_recovery_xiaomi_rosy.git)
 
-Thanks to [@NullDecoder](https://github.com/NullDecoder) for the trees!
+Thanks to [@NullDecoder](https://github.com/NullDecoder) and [@baunilla](https://github.com/baunilla) for the trees!
 
 ## About phone
 
