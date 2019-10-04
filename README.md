@@ -48,7 +48,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ## Branches
 
-##### pie-3.18-base:
+##### p-3.18-base:
 ```
 Information:
 
