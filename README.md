@@ -53,15 +53,16 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 Information:
 
 - CAF tag LA.UM.7.6.r1-05900-89xx.0
-- For pie
+- For Android 9 (P).
 ```
 
 ##### q-3.18-base:
 ```
 Information:
 
+- SAR kernel.
 - CAF tag LA.UM.7.6.r1-05900-89xx.0
-- For Q
+- For Android 10 (Q).
 ```
 
 ## Cloning & building
