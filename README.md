@@ -18,7 +18,7 @@ Thanks to [@NullDecoder](https://github.com/NullDecoder) and [@baunilla](https:/
 
 ```
 Codename - rosy
-SoC - Snapdragon 450
+SoC - Snapdragon 450 (the kernel is SDM450 + MSM8953).
 CPU - Octa-core 1.8 GHz Cortex-A53
 GPU - 600 MHz Adreno 506
 ```
