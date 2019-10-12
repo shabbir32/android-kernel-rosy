@@ -39,7 +39,6 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### Information:
 ```
-- CAF tag LA.UM.7.6.r1-05900-89xx.0 (Linux 3.18.120). Not upstreamed.
 - CPU governors: [interactive], conservative, ondemand, userspace, powersave, performance.
 - I/O schedulers: [cfq], noop, deadline.
 - TCP algorithms: [westwood], cubic, reno.
@@ -52,7 +51,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 ```
 Information:
 
-- CAF tag LA.UM.7.6.r1-05900-89xx.0
+- CAF tag LA.UM.7.6.r1-05900-89xx.0 (not upstreamed).
 - For Android 9 (P).
 ```
 
@@ -60,8 +59,7 @@ Information:
 ```
 Information:
 
-- SAR kernel.
-- CAF tag LA.UM.7.6.r1-05900-89xx.0
+- CAF tag LA.UM.8.6.r1-01900-89xx.0 (not upstreamed).
 - For Android 10 (Q).
 ```
 
