@@ -29,7 +29,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### Features:
 ```
-* Clean and minimal imports of code for rosy.
+* Clean and minimal imports of code for ROSY.
 * Can be compiled with GCC 8.3.0, all code warnings are fixed.
 * Compiler optimizations.
 * Latest prima (Wi-Fi) drivers from CAF.
@@ -69,4 +69,14 @@ Information:
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
 
-Make sure you're building the kernel with `rosy_defconfig`.
+Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on other defconfig, you can easily enable ROSY's drivers in any config with `menuconfig`. You can find special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi drivers though, they are in `menuconfig > Device Drivers > Staging drivers`.
+
+##### Steps:
+```
+1 - make ARCH=arm64 <defconfig>
+2 - make ARCH=arm64 menuconfig
+3 - make ARCH=arm64 savedefconfig
+4 - mv defconfig arch/arm64/configs/menuconfig_defconfig
+```
+
+![rosymenu](menu.png)
