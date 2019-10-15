@@ -51,7 +51,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 ```
 Information:
 
-- CAF tag LA.UM.7.6.r1-05900-89xx.0 (not upstreamed).
+- CAF tag LA.UM.7.6.r1-06400-89xx.0 (not upstreamed).
 - For Android 9 (P).
 ```
 
