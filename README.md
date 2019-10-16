@@ -1,8 +1,8 @@
 # Clean 3.18 CAF kernel for Xiaomi Redmi 5
 
-Completely clean and minimal kernel base. Use only with sane device trees, else you may experience issues for which I am not responsible at all.
+Completely clean and minimal kernel base (bare-metal kernel). Use only with device trees that contain blobs specifically for rosy because you may experience problems with the device's core functions on heavily modified trees, e.g. the camera may not work.
 
-##### Example of good trees:
+##### Example of compatible trees:
 
 Device tree: [1](https://github.com/NullDecoder/android_device_xiaomi_rosy.git) [2](https://github.com/baunilla/android_device_xiaomi_rosy.git)\
 Vendor tree: [1](https://github.com/NullDecoder/android_vendor_xiaomi_rosy.git) [2](https://github.com/baunilla/android_vendor_xiaomi_rosy.git)\
@@ -67,7 +67,7 @@ Information:
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
 
-Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on other defconfig, you can easily enable ROSY's drivers in any config with `menuconfig`. You can find special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi drivers though, they are in `menuconfig > Device Drivers > Staging drivers`.
+Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on other defconfig, you can easily enable ROSY's drivers in any config using the kernel's `menuconfig`. You can find special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi drivers though, they are in `menuconfig > Device Drivers > Staging drivers`.
 
 ##### Steps:
 ```
