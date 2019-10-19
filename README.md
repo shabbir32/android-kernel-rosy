@@ -27,13 +27,12 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ## Features & information
 
-##### Features:
+##### Main features:
 ```
 * Clean and minimal imports of code for ROSY.
 * Can be compiled with GCC 8.3.0, all code warnings are fixed.
-* Compiler optimizations.
 * Latest prima (Wi-Fi) drivers from CAF.
-* NTFS read-write support.
+* Compiler optimizations.
 * F2FS support.
 ```
 
