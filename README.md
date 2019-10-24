@@ -46,14 +46,6 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ## Branches
 
-##### p-3.18-base:
-```
-Information:
-
-- CAF tag LA.UM.7.6.r1-06400-89xx.0 (Linux 3.18.120, not upstreamed).
-- For Android 9 (P).
-```
-
 ##### q-3.18-base:
 ```
 Information:
