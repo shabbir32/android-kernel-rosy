@@ -2,7 +2,7 @@
 
 Completely clean and minimal kernel base (bare-metal kernel). Use only with device trees that contain blobs specifically for rosy because you may experience problems with the device's core functions on heavily modified trees, e.g. the camera may not work.
 
-##### Example of compatible trees:
+##### Compatible trees:
 
 Device tree: [1](https://github.com/NullDecoder/android_device_xiaomi_rosy.git) [2](https://github.com/baunilla/android_device_xiaomi_rosy.git)\
 Vendor tree: [1](https://github.com/NullDecoder/android_vendor_xiaomi_rosy.git) [2](https://github.com/baunilla/android_vendor_xiaomi_rosy.git)\
