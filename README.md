@@ -54,6 +54,13 @@ Information:
 - For Android 10 (Q).
 ```
 
+##### q-3.18-upstream:
+```
+Information:
+
+This branch is clone of q-3.18-base with common/android-3.18 merged (upstream).
+```
+
 ## Cloning & building
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
