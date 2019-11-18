@@ -15,10 +15,9 @@ Thanks to [@NullDecoder](https://github.com/NullDecoder) and [@baunilla](https:/
 ![phone](rosy.jpg)
 
 ##### Basic specifications:
-
 ```
 Codename - rosy
-SoC - Snapdragon 450 (the kernel is SDM450 + MSM8953).
+SoC - Snapdragon 450
 CPU - Octa-core 1.8 GHz Cortex-A53
 GPU - 600 MHz Adreno 506
 ```
@@ -31,7 +30,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 ```
 * Clean and minimal imports of code for ROSY.
 * Can be compiled with GCC 8.3.0, all code warnings are fixed.
-* Latest prima (Wi-Fi) drivers from CAF.
+* Updated prima (Wi-Fi) drivers from CAF, compatible with GCC 8.3.0.
 * Compiler optimizations.
 * F2FS support.
 ```
@@ -50,7 +49,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 ```
 Information:
 
-- CAF tag LA.UM.8.6.r1-02300-89xx.0 (25/10/19, Linux 3.18.124, not upstreamed).
+- CAF tag LA.UM.8.6.r1-02600-89xx.0 (25/10/19, Linux 3.18.124, not upstreamed).
 - For Android 10 (Q).
 ```
 
@@ -58,7 +57,7 @@ Information:
 ```
 Information:
 
-This branch is clone of q-3.18-base with common/android-3.18 merged (upstream).
+This branch is clone of q-3.18-base with Google's common/android-3.18 merged (upstream).
 ```
 
 ## Cloning & building
