@@ -22,10 +22,10 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 ```
 * Clean, optimized, and minimal imports of code for rosy (based on riva-o-oss branch).
 * Optimized touchscreen drivers (fixed freezing and reduced debugging).
-* Compiled with GCC 8.3.0 and all code warnings fixed.
+* Can be compiled with GCC 9.2.0, all code warnings are fixed.
 * Compiler tuned for Cortex-A53 (CPU optimization).
 * F2FS support.
-* Miscellaneous improvements that are not listed here.
+* Miscellaneous config improvements that are not listed here.
 ```
 
 ##### Information:
@@ -40,14 +40,12 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### q-3.18-base:
 ```
-Information:
 - CAF tag LA.UM.8.6.r1-02900-89xx.0 (December 13, 2019; Linux 3.18.124; not upstreamed).
 ```
 
 ##### q-3.18-upstream:
 ```
-Information:
-- This branch is a clone of q-3.18-base with merged android-3.18 (Google's upstreamed 3.18 kernel branch).
+- This branch is a clone of q-3.18-base with linux-stable & f2fs-stable merged (upstream).
 ```
 
 ## Cloning & building
