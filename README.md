@@ -40,7 +40,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### q-3.18-base:
 ```
-- CAF tag LA.UM.8.6.r1-02900-89xx.0 (December 13, 2019; Linux 3.18.124; not upstreamed).
+- CAF tag LA.UM.8.6.r1-03400-89xx.0 (January 29, 2019; Linux 3.18.124; not upstreamed).
 ```
 
 ##### q-3.18-upstream:
