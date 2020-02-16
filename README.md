@@ -24,7 +24,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 * Optimized touchscreen drivers (fixed freezing and reduced debugging).
 * Can be compiled with GCC 9.2.0, all code warnings are fixed.
 * Compiler tuned for Cortex-A53 (CPU optimization).
-* F2FS support.
+* Full F2FS support.
 * Miscellaneous config improvements that are not listed here.
 ```
 
@@ -38,21 +38,46 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ## Branches
 
-##### q-3.18-base:
+##### master:
 ```
-- CAF tag LA.UM.8.6.r1-03400-89xx.0 (January 29, 2019; Linux 3.18.124; not upstreamed).
+- Default branch with all other branches merged.
 ```
 
-##### q-3.18-upstream:
+##### 3.18-fixes:
 ```
-- This branch is a clone of q-3.18-base with linux-stable & f2fs-stable merged (upstream).
+- Contains commits that fix various things.
+```
+
+##### 3.18-gcc-fixes:
+```
+- Contains commits that fix various things by/for GCC.
+```
+
+##### 3.18-optimizations:
+```
+- Contains commits for optimization mostly specific to rosy.
+```
+
+##### 3.18-rosy-o:
+```
+- Contains buildable oreo kernel base for rosy (but needs 3.18-fixes branch merged).
+```
+
+##### 3.18-upstream:
+```
+- Contains linux-3.18.y branch's commits of linux-stable and f2fs-stable repositories.
+```
+
+##### LA.UM.8.6.r1-03400-89xx.0:
+```
+- CAF tag LA.UM.8.6.r1-03400-89xx.0 (January 29, 2019; Linux 3.18.124).
 ```
 
 ## Cloning & building
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
 
-Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on another defconfig, you can easily enable ROSY's drivers in any config using the kernel's `menuconfig`. You can find a special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi drivers though, they are located in `menuconfig > Device Drivers > Staging drivers`.
+Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on another defconfig, you can easily enable ROSY's drivers in any config using the kernel's `menuconfig`. You can find a special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi (prima) drivers though, they are located in `menuconfig > Device Drivers > Staging drivers`.
 
 ##### Steps (normal defconfig):
 ```
