@@ -1,4 +1,4 @@
-# Clean 3.18 CAF kernel for Xiaomi Redmi 5
+# Clean 3.18 CAF kernel base
 
 Completely clean and minimal kernel base (bare-metal kernel) with everything working.
 
@@ -40,7 +40,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### master:
 ```
-- Default branch with all other branches merged.
+- Default branch with all 3.18... branches merged.
 ```
 
 ##### 3.18-fixes:
@@ -55,12 +55,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### 3.18-optimizations:
 ```
-- Contains commits for optimization mostly specific to rosy.
-```
-
-##### 3.18-rosy-o:
-```
-- Contains buildable oreo kernel base for rosy (but needs 3.18-fixes branch merged).
+- Contains commits for optimization.
 ```
 
 ##### 3.18-upstream:
@@ -68,12 +63,19 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 - Contains linux-3.18.y branch's commits of linux-stable and f2fs-stable repositories.
 ```
 
-##### LA.UM.8.6.r1-03400-89xx.0:
+##### LA.UM.8.6.r1-04000-89xx.0:
 ```
-- CAF tag LA.UM.8.6.r1-03400-89xx.0 (January 29, 2019; Linux 3.18.124).
+- CAF tag LA.UM.8.6.r1-04000-89xx.0 (February 28, 2020; Linux 3.18.124).
+```
+
+##### rosy:
+```
+- Based on master branch with commits for Xiaomi Redmi 5 (rosy).
 ```
 
 ## Cloning & building
+
+For ROSY:
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
 
