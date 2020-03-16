@@ -34,44 +34,47 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 - I/O schedulers: [cfq], noop, deadline.
 - TCP algorithms: [westwood], cubic, reno.
 - Compression algorithms: [lz4], lzo.
+- INITRD compression: [gzip].
 ```
 
 ## Branches
 
 ##### master:
 ```
-- Default branch with all 3.18... branches merged.
+* Default branch with all 3.18* branches merged.
 ```
 
 ##### 3.18-fixes:
 ```
-- Contains commits that fix various things.
+* Contains commits that fix various things.
 ```
 
 ##### 3.18-gcc-fixes:
 ```
-- Contains commits that fix various things by/for GCC.
+* Contains commits that fix various things by/for GCC.
 ```
 
 ##### 3.18-optimizations:
 ```
-- Contains commits for optimization.
+* Contains commits for optimization.
 ```
 
 ##### 3.18-upstream:
 ```
-- Contains linux-3.18.y branch's commits of linux-stable and f2fs-stable repositories.
+* Contains linux-3.18.y branch of linux-stable and f2fs-stable repositories.
 ```
 
 ##### LA.UM.8.6.r1-04000-89xx.0:
 ```
-- CAF tag LA.UM.8.6.r1-04000-89xx.0 (February 28, 2020; Linux 3.18.124).
+* CAF tag LA.UM.8.6.r1-04000-89xx.0 (February 28, 2020; Linux 3.18.124).
 ```
 
 ##### rosy:
 ```
-- Based on master branch with commits for Xiaomi Redmi 5 (rosy).
+* Based on master branch with commits for Xiaomi Redmi 5 (rosy).
 ```
+
+Any other branches (if any at the moment) contain experimental stuff or stuff under testing.
 
 ## Cloning & building
 
