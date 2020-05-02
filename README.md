@@ -20,16 +20,22 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### Main features:
 ```
+* Merged linux-stable (upstream to Linux 3.18.140).
+* Merged f2fs-stable (upstreamed F2FS).
+* Merged latest compatible prima drivers (upstreamed Wi-Fi drivers).
+* Optimized prima drivers (reduced debugging and unnecessary wakelocks).
 * Clean, optimized, and minimal imports of code for rosy (based on riva-o-oss branch).
 * Optimized touchscreen drivers (fixed freezing and reduced debugging).
-* Can be compiled with GCC 9.2.0, all code warnings are fixed.
+* Can be compiled with GCC 9.2.1 & -O3, all code warnings are fixed.
 * Compiler tuned for Cortex-A53 (CPU optimization).
+* Memory optimizations.
 * Full F2FS support.
 * Miscellaneous config improvements that are not listed here.
 ```
 
 ##### Information:
 ```
+- CAF tag: LA.UM.8.6.r1-04200-89xx.0
 - CPU governors: [interactive], conservative, ondemand, userspace, powersave, performance.
 - I/O schedulers: [cfq], noop, deadline.
 - TCP algorithms: [westwood], cubic, reno.
@@ -54,6 +60,16 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 * Contains commits that fix various things by/for GCC.
 ```
 
+##### 3.18-misc:
+```
+* Contains random upstream, backport, etc. commits.
+```
+
+##### 3.18-no-debug:
+```
+* Contains commits that remove hard-coded debug code.
+```
+
 ##### 3.18-optimizations:
 ```
 * Contains commits for optimization.
@@ -64,9 +80,9 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 * Contains linux-3.18.y branch of linux-stable and f2fs-stable repositories.
 ```
 
-##### LA.UM.8.6.r1-04000-89xx.0:
+##### LA.UM.8.6.r1-04200-89xx.0:
 ```
-* CAF tag LA.UM.8.6.r1-04000-89xx.0 (February 28, 2020; Linux 3.18.124).
+* CAF tag LA.UM.8.6.r1-04200-89xx.0 (April 2, 2020; Linux 3.18.124).
 ```
 
 ##### rosy:
