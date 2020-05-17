@@ -47,47 +47,47 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### master:
 ```
-* Default branch with all 3.18* branches merged.
+Contains all 3.18* branches merged.
 ```
 
 ##### 3.18-fixes:
 ```
-* Contains commits that fix various things.
+Contains commits that fix various things.
 ```
 
 ##### 3.18-gcc-fixes:
 ```
-* Contains commits that fix various things by/for GCC.
+Contains commits that fix various things by/for GCC.
 ```
 
 ##### 3.18-misc:
 ```
-* Contains random upstream, backport, etc. commits.
+Contains random upstream, backport, etc. commits.
 ```
 
 ##### 3.18-no-debug:
 ```
-* Contains commits that remove hard-coded debug code.
+Contains commits that remove hard-coded debug code.
 ```
 
 ##### 3.18-optimizations:
 ```
-* Contains commits for optimization.
+Contains commits for optimization.
+```
+
+##### 3.18-rosy-o-oss:
+```
+Contains drivers and code changes for rosy.
 ```
 
 ##### 3.18-upstream:
 ```
-* Contains linux-3.18.y branch of linux-stable and f2fs-stable repositories.
+Contains linux-3.18.y branch of linux-stable and f2fs-stable.
 ```
 
 ##### LA.UM.8.6.r1-04200-89xx.0:
 ```
-* CAF tag LA.UM.8.6.r1-04200-89xx.0 (April 2, 2020; Linux 3.18.124).
-```
-
-##### rosy:
-```
-* Based on master branch with commits for Xiaomi Redmi 5 (rosy).
+CAF tag LA.UM.8.6.r1-04200-89xx.0 (April 2, 2020; Linux 3.18.124).
 ```
 
 Any other branches (if any at the moment) contain experimental stuff or stuff under testing.
