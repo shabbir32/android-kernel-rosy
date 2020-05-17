@@ -1,6 +1,6 @@
-# Clean 3.18 CAF kernel base
+# 3.18 CAF kernel base
 
-Completely clean and minimal kernel base (bare-metal kernel) with everything working.
+Minimal kernel base with everything working.
 
 ## About phone
 
