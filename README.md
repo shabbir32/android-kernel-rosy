@@ -100,7 +100,7 @@ For ROSY:
 
 This kernel contains submodules. To build it successfully, you have to either clone it with `--recursive` option or do `git submodule update --init --recursive` in the kernel directory after cloning.
 
-Make sure you are building the kernel with `rosy-perf_defconfig`. In case you want to base on another defconfig, you can easily enable ROSY's drivers in any config using the kernel's `menuconfig`. You can find a special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi (prima) drivers though, they are located in `menuconfig > Device Drivers > Staging drivers`.
+Make sure you are building the kernel with `rosy_defconfig`. In case you want to base on another defconfig, you can easily enable ROSY's drivers in any config using the kernel's `menuconfig`. You can find a special section with drivers for ROSY in `menuconfig > Device Drivers > Drivers for ROSY`. Do not forget to build the Wi-Fi (prima) drivers though, they are located in `menuconfig > Device Drivers > Staging drivers`.
 
 ##### Steps (normal defconfig):
 ```
