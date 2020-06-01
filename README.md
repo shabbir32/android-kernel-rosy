@@ -26,6 +26,7 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 * Optimized prima drivers (reduced debugging and unnecessary wakelocks).
 * Clean, optimized, and minimal imports of code for rosy (based on riva-o-oss branch).
 * Optimized touchscreen drivers (fixed freezing and reduced debugging).
+* Reduced unnecessary debug and removed useless hard-coded debug.
 * Can be compiled with GCC 9.2.1 & -O3, all code warnings are fixed.
 * Compiler tuned for Cortex-A53 (CPU optimization).
 * Memory optimizations.
@@ -35,7 +36,8 @@ Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_5-8768.p
 
 ##### Information:
 ```
-- CAF tag: LA.UM.8.6.r1-04200-89xx.0
+- CAF tag kernel: LA.UM.8.6.r1-04400-89xx.0
+- CAF tag prima: LA.UM.8.6.r1-04400-89xx.0
 - CPU governors: [interactive], conservative, ondemand, userspace, powersave, performance.
 - I/O schedulers: [cfq], noop, deadline.
 - TCP algorithms: [westwood], cubic, reno.
@@ -85,9 +87,9 @@ Contains drivers and code changes for rosy.
 Contains linux-3.18.y branch of linux-stable and f2fs-stable.
 ```
 
-##### LA.UM.8.6.r1-04200-89xx.0:
+##### LA.UM.8.6.r1-04400-89xx.0:
 ```
-CAF tag LA.UM.8.6.r1-04200-89xx.0 (April 2, 2020; Linux 3.18.124).
+CAF tag LA.UM.8.6.r1-04400-89xx.0 (May 21, 2020; Linux 3.18.124).
 ```
 
 Any other branches (if any at the moment) contain experimental stuff or stuff under testing.
