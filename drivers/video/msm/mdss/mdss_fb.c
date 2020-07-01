@@ -56,6 +56,7 @@
 #include "mdss_smmu.h"
 #include "mdss_mdp.h"
 #include "mdp3_ctrl.h"
+#include "mdss_dsi.h"
 
 #ifdef CONFIG_FB_MSM_TRIPLE_BUFFER
 #define MDSS_FB_NUM 3
@@ -4835,6 +4836,9 @@ int mdss_fb_do_ioctl(struct fb_info *info, unsigned int cmd,
 	struct mdp_buf_sync buf_sync;
 	unsigned int dsi_mode = 0;
 	struct mdss_panel_data *pdata = NULL;
+	unsigned int color_mode = 0;
+	unsigned int ce_mode = 0;
+	unsigned int cabc_mode = 0;
 
 	if (!info || !info->par)
 		return -EINVAL;
@@ -4912,6 +4916,34 @@ int mdss_fb_do_ioctl(struct fb_info *info, unsigned int cmd,
 
 	case MSMFB_ASYNC_POSITION_UPDATE:
 		ret = mdss_fb_async_position_update_ioctl(info, argp);
+		break;
+
+	case MSMFB_ENHANCE_SET_GAMMA:
+		if (copy_from_user(&color_mode, argp, sizeof(color_mode))) {
+			pr_err("%s: MSMFB_ENHANCE_SET_GAMMA ioctl failed\n",
+				__func__);
+			goto exit;
+		}
+		ret = mdss_panel_set_gamma(pdata, color_mode);
+		break;
+
+	case MSMFB_ENHANCE_SET_CE:
+		if (copy_from_user(&ce_mode, argp, sizeof(ce_mode))) {
+			pr_err("%s: MSMFB_ENHANCE_SET_CE ioctl failed\n",
+				__func__);
+			goto exit;
+		}
+		ret = mdss_panel_set_ce(pdata, ce_mode);
+		break;
+
+	case MSMFB_SET_CABC:
+		if (copy_from_user(&cabc_mode, argp, sizeof(cabc_mode))) {
+			pr_err("%s: MSMFB_SET_CABC ioctl failed\n",
+				__func__);
+			goto exit;
+		}
+		ret = mdss_panel_set_cabc(pdata, cabc_mode);
+		pdata->panel_info.cabcmode = cabc_mode;
 		break;
 
 	default:
